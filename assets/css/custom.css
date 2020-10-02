@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid #3bade6; */
+}
+
+
+/* Start General Rules */
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+.head-line {
+    border: 1px solid #3aade6;
+    width: 80px;
+}
+
+.vertical-line {
+    border-right: 1px solid #3aade6;
+    border-width: 5px;
+}
+
+.btn-color {
+    background-color: #233142;
+}
+
+/* section{
+    height: 100vh;
+} */
+
+/* End General Rules */
+
+/* Start Navbar */
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: #3bade6;
+}
+
+/* End Navbar */
+
+/* Start Home */
+
+.home {
+    background-image: url(../imgs/header-side.jpg);
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+
+.home h1 {
+    line-height: 1.5;
+}
+
+/* .head_right{
+    background-image: url(../imgs/.home.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: right;
+} */
+
+/* .head_left {
+    background-image: url(../imgs/.home-side.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+} */
+
+/* End Home */
+
+/* Start About */
+
+
+/* .about_right{
+    background-image: url(../imgs/who-are-we.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+} */
+
+.about_left p {
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+/* End About */
+
+/* Start Offer */
+
+.offer {
+    background-image: url(../imgs/we-offer.png);
+    background-size: cover;
+    padding: 60px 0px;
+}
+
+.offer .slick-slide {
+    margin: 0px 15px;
+}
+
+.offer .card {
+    border-radius: 30px;
+    /* width: 40% */
+}
+
+.offer .card img {
+    width: 60%;
+
+}
+
+/* End Offer */
+
+/* Start Work */
+
+.work {
+    background-image: url(../imgs/bg30-Ar1web.gif);
+}
+
+.work .card {
+    border-radius: 30px;
+}
+
+.work .card img {
+    border-radius: 30px;
+}
+
+/* .work img{
+    width: 100%;
+    max-height: 250px;
+} */
+
+/* End Work */
+
+/* Start Articles */
+
+.articles .card {
+    border-radius: 30px;
+}
+
+.articles .card img {
+    border-radius: 30px;
+}
+
+/* End Articles */
+
+/* Start Clients */
+
+.clients {
+    background-image: url(../imgs/our-client-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+
+}
+
+.clients img {
+    width: 150px;
+}
+
+/* End Clients */
+
+/*  Start Our Articles */
+
+.our-articles {
+    background-image: url(../imgs/articles.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* End Our Articles */
+
+/* Start Article Details */
+
+.article-details .articles {
+    line-height: 2.5;
+    background-image: url(../imgs/bg30-Ar1web.gif);
+}
+
+
+
+/* End Article Details */
+
+/* Start Project Details */
+
+.project-details .project-details-text {
+    background-image: url(../imgs/details-bg.png);
+    background-size: cover;
+    font-size: 20px;
+}
+
+/* End Project Details */
+
+/* Start Project Tour */
+.project-tour {
+    height: 120vh;
+}
+
+/* Start Smooth Carsoul */
+
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-carousel .my-card {
+    height: 20rem;
+    width: 12rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    /* background: #2e5266; */
+    /* background: linear-gradient(to top, #2e5266, #6e8898); */
+    transition: 1s;
+}
+
+.card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    bottom: -5rem;
+    /* -webkit-filter: blur(4px); */
+    /* filter: blur(4px); */
+}
+
+.card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+/* End Smooth Carsoul */
+
+/* End Project Tour */
+
+/* Start Footer */
+
+footer {
+    background-image: url(../imgs/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0px;
+}
+
+.footer_right img {
+    width: 40%;
+}
+
+.footer_left img {
+    width: 50%
+}
+
+
+/* End Footer */
+
+/* Start Media */
+
+@media (min-width: 768px) {
+
+    .home .row {
+        height: 85vh;
+    }
+
+    .about .row {
+        height: 90vh;
+    }
+
+    .article-details .articles img {
+        width: 60%;
+    }
+
+    .article-details .articles p {
+        padding: 0 1rem;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .home {
+        background-image: none;
+    }
+
+    .article-details .articles img {
+        width: 100%;
+    }
+
+    .article-details .articles p {
+        padding: 0 0.15rem;
+        text-align: right !important;
+    }
+
+    footer .footer_right {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* End Media */
